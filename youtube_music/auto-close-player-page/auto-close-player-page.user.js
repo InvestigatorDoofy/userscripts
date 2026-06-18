@@ -2,6 +2,7 @@
 // @name         YouTube Music: Auto-close player page (force mini player)
 // @namespace    https://github.com/InvestigatorDoofy
 // @version      2.0
+// @license      MIT
 // @description  On music.youtube.com, watches for ytmusic-player-page gaining the "player-page-open" attribute and immediately clicks the "Close player page" button. This prevents the full player page from staying open when you click Play on browse pages (New Releases, albums, etc.), while keeping playback in the mini-player.
 // @author       InvestigatorDoofy
 // @match        https://music.youtube.com/*
