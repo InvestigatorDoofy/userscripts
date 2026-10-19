@@ -34,8 +34,8 @@
     }
 
     // Find the close button
-    const closeBtn = playerPage.querySelector('button[aria-label="Close player page"]') ||
-                     document.querySelector('button[aria-label="Close player page"]');
+    const closeBtn = playerPage.querySelector('button[aria-label="Open mini player"]') ||
+                     document.querySelector('button[aria-label="Open mini player"]');
 
     if (closeBtn) {
       console.log(LOG_PREFIX, 'Player page opened → clicking close button');
@@ -45,7 +45,7 @@
     } else {
       // Button might not be rendered yet — try again shortly
       setTimeout(() => {
-        const btn = document.querySelector('button[aria-label="Close player page"]');
+        const btn = document.querySelector('button[aria-label="Open mini player"]');
         if (btn && playerPage.hasAttribute('player-page-open')) {
           btn.click();
           lastCloseTime = Date.now();
